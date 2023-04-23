@@ -3,15 +3,14 @@
 #include<stdlib.h>
 int datainputint = 0;
 int opcre = 0;
-// function declarations start
+// function declarations start (this just so the annoying yellow marks dont show up)
 int strucfunc();
 int main();
 int structeje1();
-
 // function declaration end 
 
 
-
+// struct bellow is used for exer 1 of structs
 struct info2
 {
     char type[30];
@@ -27,11 +26,13 @@ struct info2
 
 struct info2 a2a;
 
+// input and output buffer clearer
 void cbuf(){
     fflush(stdin);
     fflush(stdout);
 }
 
+// function below is the main function for array excersizes, hosts each excercise in a case 
 int arrayfunc(){
     int opcarray = 0;
     // char arreglo[11] = "";
@@ -103,6 +104,7 @@ for (int i = 0; i <= 4; i++) {
     return 0;
 }
 
+// function below fetches user data for ejer 1/struct: info2 and returns said data by a buffer called "input"
 struct info2 struca1(int z)
 {
     struct info2 input;
@@ -151,6 +153,7 @@ struct info2 struca1(int z)
     return input;
 };
 
+// function fetchs a struct then prints said struct if the values aren't '0' (user asked to input 0 if desired value is unknown when entered)
 struct info2 print(struct info2 b){
     printf("\n");
     char ifcond = '0';
@@ -179,7 +182,7 @@ struct info2 print(struct info2 b){
     cbuf();
    return b;
 }
-
+// function bellow is used when program ends
 int strucsend() {
     printf("Usted ha llegado al fin del programa, desea: \n volver a inicio(0)\n volver al menu de estructuras?(1)\n reinciar este ejercicio(2)\n salir (3)\n ");
         scanf("%d",&datainputint); cbuf(); switch (datainputint)
@@ -209,6 +212,7 @@ int strucsend() {
     return 0;
 }
 
+// Main function for exer 1 of structs
 int structeje1() {
     int i;
     int e = 0;
@@ -270,7 +274,7 @@ int structeje2() {
     return 0;
 }
 
-
+// Menu for structures
 int strucfunc(){
     int opcstruct = 0;
     printf("Ingrese el numero del ejercicio que quiere ver y 4 para volver al menu \n");
@@ -320,7 +324,7 @@ int strucfunc(){
     }
     return 0;
 }
-
+// main
 int main() {
 int opc = 0;
 printf("Guia 1 \n Presione 0 para entrar a los arreglos \n Presione 1 para las Estructuras \n Presione 2 para salir \n");
