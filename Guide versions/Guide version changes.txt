@@ -4,3 +4,4 @@ Main: ??
 1.1: implemented structure arrays into exercise #1
 1.2: changed typedef for conventional struct declaration in excercise #1
      commented and explained code
+1.3: Implementation of second structs excercise 

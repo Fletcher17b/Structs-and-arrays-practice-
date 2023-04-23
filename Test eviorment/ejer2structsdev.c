@@ -4,7 +4,6 @@
 #include<string.h>
 
 int datainputint;
-char dataimputchar[100] = ""; 
 
 void cbuf(){
     fflush(stdin);
@@ -85,37 +84,7 @@ struct studentinfo infoprint(struct studentinfo out) {
 
 
 int main(){ 
-  struct studentinfo data[40];  
-  printf("Hola \n");
-    int i;
-    int e = 0;
-    int count = 0;
-    printf("Ingrese cantidad de alumnos que va a registrar (maximo 40) \n");
-    scanf("%d",&count);
-    cbuf();
-    while (count>40)
-    {    printf("Cantidad deseada saturara el sistema, segmente su ingreso de datos en cantidades mas pequenas\n");
-        scanf("%d",&count);}
-    for (i=1; i<=count;i++) {
-        data[i] = infofetch(i); 
-        printf(" \n Desea ver datos del estudiante para comprobar? \n (1 = si, cualquier otra tecla = no) \n");
-        scanf("%d",&datainputint);
-        if (datainputint == 1) {
-            printf("\n Datos del estudiante %d: \n",i);
-            infoprint(data[i]);
-        }
-    }
-    printf("\nDesea ver la lista completa de estudiantes?(1 = si, otra tecla = no )\n");
-    scanf("%d",&e);
-
-    if (e==1) {
-        for (i=1; i<=count;i++) {
-        printf("\nEstudiante #%d\n",i);   
-        infoprint(data[i]);
-    }
-    }
-
-    
+  
 
     return 0;
 }
