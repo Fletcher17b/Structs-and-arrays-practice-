@@ -1,0 +1,5 @@
+0.0: ??
+Main: ??
+1.0: implemented first structs exercise 
+1.1: implemented structure arrays into exercise #1
+1.2: changed typedef for conventional struct declaration in excercise #1
