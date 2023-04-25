@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<dos.h>
 #include<stdlib.h>
+#include<string.h>
 int datainputint = 0;
 int opcre = 0;
 // function declarations start (this just so the annoying yellow marks dont show up)
@@ -8,7 +9,6 @@ int strucfunc();
 int main();
 int structeje1();
 // function declaration end 
-
 
 // struct bellow is used for exer 1 of structs
 struct info2
@@ -377,6 +377,10 @@ int structeje2() {
     return 0;
 }
 
+int structseje3() {
+
+    return 0;
+}
 // Menu for structures
 int strucfunc(){
     int opcstruct = 0;
