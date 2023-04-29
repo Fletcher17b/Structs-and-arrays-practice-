@@ -14,29 +14,19 @@ void cbuf(){
     fflush(stdout);
 }
 
-struct infoathle {
+struct infoper {
     char nombres[50];
     char apellidos[50];
+    float estatura;
     int edad;
     char sexo[50];
+};
+
+struct infoatle
+{
     char deporte[50];
 };
 
-
-struct test1 {
-   struct test2 {
-      char wordtest2[20];
-      };
-    
-    struct test3{
-      char wordtest3[20];
-    };  
-   
-};
-
-struct structnest{
-    struct test1;
-};
 
 
 

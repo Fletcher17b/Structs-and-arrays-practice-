@@ -1,0 +1,83 @@
+Updated for ver 1.4
+(from top to bottom, usually) 
+pendent migration to excel sheet
+
+//
+
+Important variables: 
+-datainput : line 5 : global variable that is constantly rewriten for use in switches
+
+-opcre :line 6: global variable designed to be rewrited and used in switches locally ( bad idea)
+
+-opcarray: line 52 : int type var used for switch of arrayfunc (menu for array exercises)
+
+- i,e :line 290-291: int type vars, they are counters in structeje1, local vars,
+
+-count :line : used locally in structeje1 funtion to store how many products are desired by user
+
+-inputcharbuffer[100] :line 403: used for strcpy() string 2
+
+
+Functions: 
+
+-cleanbuff : line 42 : void type function used for clearing in and out buffers
+
+arrayfunc : line 48 : int type function that handles the array excers
+
+-readterfunc_EXER1:line 120 : struct type function (info2), used for recieving and storing user input on "structure info2 input", 
+requires an int type var called z ,returns "structure info2 input"
+
+-printerfunc_exer1: line 169: struct info2 type function, requires an info2 type structre, grabs the given struct and prints it if 
+the values stored arent '0' (0 is stored as a char)
+
+-readterfunc_exer2 :line 199: struct studentinfo type structure, requires int z var, similar to [struca1] it gets user input and
+stores it in "struct student in" then returns "struct student in"
+
+-printerfunc_exer2:line 242: struct studentinfo type function, asks for a structure (struct student info out) in the argument 
+then prints given structure, it returns the given structure but it isnt used for anything 
+
+-progend_func:line 262: int type function that is used when program ends, may change to void type as it returns nothing
+
+-exer1_mainfunc :line 289: int type function, returns nothing, used as a central function for exer 1 of structures, 
+
+-exer2_mainfunc :line 346: int type function, main function for exer 2 of structures, returns nothing :0
+
+-exer3_mainfunc :line 478: int type funtions, main function for exer 3 of structures, returns, once again, nothing
+
+-strcutexer_menu :line 530: int type function that serves as the menu for the structure exercises, returns nada
+
+-readterfunc_exer3:line 402: struct atleta type function, stores user questions in "struct atleta a1". returns a1
+
+-printer_exer3 :line 451: struct atleta type function, recieves a struct atleta z and integer x, prints values of the struct
+, returns z but z isn't used
+
+-main :line 580: main
+
+
+Arrays: 
+arreglo1: char
+arreglo2: float
+arreglo3: char
+
+
+structures: 
+-CNCproduct_info (temp):line 14 : struct used for exer 1 of structures
+
+-studentinfo : line 28 : struct used for exer 2 of structs 
+
+-struct CNCproduct_info a2a: line 39: structure variable of info2, residual
+
+-struct info2 input: line 122 : local structure used by struca1 to return it's info, later on is assigned to a structure
+array of info2, explanation requires further work
+
+-struct studentinfo data[] :line 347:structure array used for storing X instances of studentinfo
+
+-struct infoper :line 382: nested structure that contains personal info, used in structure "Atleta"
+
+-struct atleta :line 390: contains information used in the third exer of structures, contains as "b" "struct infoper b"
+
+-struct atleta a1 :line 403: structure used to be returned on a function
+
+-struct student in :line 200:  structure used to be returned on a function
+
+-struct atleta fin :line 479: structure array
